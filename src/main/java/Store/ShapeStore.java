@@ -1,13 +1,13 @@
+package Store;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
 
 // Creational pattern: Singleton
-class ShapeStore {
+public class ShapeStore {
     private static ShapeStore instance;
-    private List<Shape> shapes;
+    private List<shapes.Shape> shapes;
 
     private ShapeStore() {
         shapes = new ArrayList<>();
@@ -20,11 +20,11 @@ class ShapeStore {
         return instance;
     }
 
-    public void addShape(Shape shape) {
+    public void addShape(shapes.Shape shape) {
         shapes.add(shape);
     }
 
-    public List<Shape> getShapes() {
+    public List<shapes.Shape> getShapes() {
         return shapes;
     }
 }

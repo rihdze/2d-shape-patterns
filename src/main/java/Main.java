@@ -1,3 +1,21 @@
+import Store.ShapeStore;
+import factories.CircleFactory;
+import factories.RectangleFactory;
+import factories.ShapeFactory;
+import generators.CircleGenerator;
+import generators.RectangleGenerator;
+import generators.ShapeGenerator;
+
+import iterators.ShapeIterator;
+import iterators.ShapeStoreIterator;
+import observers.ConsoleObserver;
+import observers.ShapeObserver;
+import shapes.Shape;
+import states.BoldState;
+import states.NormalState;
+import states.ShapeState;
+
+
 public class Main {
     public static void main(String[] args) {
         ShapeObserver observer = new ConsoleObserver();

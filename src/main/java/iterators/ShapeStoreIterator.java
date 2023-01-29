@@ -1,12 +1,9 @@
-import java.awt.*;
+package iterators;
 
-// Behavioral pattern: Iterator
-interface ShapeIterator {
-    boolean hasNext();
-    Shape next();
-}
 
-class ShapeStoreIterator implements ShapeIterator {
+import Store.ShapeStore;
+
+public class ShapeStoreIterator implements ShapeIterator {
     private ShapeStore shapeStore;
     private int index;
 
@@ -21,7 +18,7 @@ class ShapeStoreIterator implements ShapeIterator {
     }
 
     @Override
-    public Shape next() {
+    public shapes.Shape next() {
         return shapeStore.getShapes().get(index++);
     }
 }
