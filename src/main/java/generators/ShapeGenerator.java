@@ -1,7 +1,6 @@
 package generators;
 
 import Store.ShapeStore;
-import factories.ShapeFactory;
 import observers.ShapeObserver;
 import shapes.Shape;
 
